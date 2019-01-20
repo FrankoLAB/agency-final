@@ -2,13 +2,19 @@
 	font-family: "Proxima Nova";
 	src: url(fonts/ProximaNovaT-Thin.ttf);
 }
+@font-face {
+	font-family: "Roboto";
+	src: url(fonts/Roboto.ttf);
+}
 
 body {
 	overflow-x:hidden;
 	height: 1000px;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 header {
-	background: url(img/header-bg.png) center;
+	background: url(img/header-bg.png) center no-repeat;
 	height: 1000px;
 }
 .navbar {
@@ -148,4 +154,146 @@ header {
 	line-height: 30px;
 	margin-top: 15px;
 	margin-bottom: 35px;
+}
+.whatWeDo {
+	min-height: 850px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.section-title {
+	margin: 0 auto;
+	width: 277px;
+	font-family: "Proxima Nova";
+	font-size: 48px;
+	font-weight: 700;
+}
+.whatWeDo-title {
+	margin: 0 auto;
+	width: 277px;
+	color: #000000;
+	font-family: "Proxima Nova";
+	font-size: 48px;
+	font-weight: 700;
+}
+.whatWeDo-cards {
+	margin: 0 300px;
+	margin-top: 113px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 80px;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	border: none;
+}
+.webDesign-img {
+	background: url(img/web-design.png) no-repeat top;
+}
+.webApplications-img {
+	background: url(img/web-aplication.png) no-repeat top;
+}
+.digitalPaiting-img {
+	background: url(img/digital-paiting.png) no-repeat top;
+}
+.desktopApplications-img {
+	background: url(img/aplications.png) no-repeat top;
+}
+
+.card-content {
+	max-width: 60%;
+}
+.whatWeDo-button {
+	margin: 110px auto 0 auto;
+}
+
+.aboutUs {
+	width: 100%;
+	min-height: 900px;
+	padding-top: 110px;
+	margin: 0 auto;
+	background: url(img/about-bg.png) no-repeat top;
+}
+.aboutUs-title {
+	color: #fff;
+	margin-bottom: 35px;
+	text-align: center;
+}
+.aboutUs-subtitle {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 130px;
+	width: 699px;
+	color: #949494;
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	font-weight: 300;
+}
+.aboutUs-cards {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1020px;
+}
+.aboutUs-card {
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.aboutUs-card-img {
+	width: 135px;
+	height: 135px;
+}
+.about-img-1 {
+	background: url(img/about-1.png) no-repeat center;
+}
+.about-img-2 {
+	background: url(img/about-2.png) no-repeat center;
+}
+.about-img-3 {
+	background: url(img/about-3.png) no-repeat center;
+}
+.about-img-4 {
+	background: url(img/about-4.png) no-repeat center;
+}
+.aboutUs-card-title {
+	width: 101px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 25px;
+}
+.aboutUs-card-subtitle {
+	width: 222px;
+	color: #949494;
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 5px;
+}
+.aboutUs-button {
+	margin: 0 auto;
+	margin-top: 70px;
+}
+footer {
+	height: 700px;
+	background: #fff;
+	padding-top: 66px;
+}
+.footer-text {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: #a7acbc;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: "Proxima Nova";
+	padding-bottom: 20px;
+}
+.footer-text strong {
+	font-weight: 700;
 }
