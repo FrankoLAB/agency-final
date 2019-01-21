@@ -8,14 +8,30 @@
 }
 
 body {
-	overflow-x:hidden;
+	overflow-x: hidden;
 	height: 1000px;
 	max-width: 1920px;
 	margin: 0 auto;
 }
 header {
-	background: url(img/header-bg.png) center no-repeat;
+	background: url(img/header-bg.png) center fixed no-repeat;
 	height: 1000px;
+}
+.navbar {
+	transition: 0.5s;
+}
+.navbar:hover {
+	background: rgba(255,255,255,0.5);
+	transition: 0.5s;
+}
+.wrap {
+	background: rgba(10,10,10,0.0);
+	transition: 1s;
+	height: 100%;
+}
+.blur {
+	background: rgba(30,30,30,0.8);
+	transition: 0.5s;
 }
 .navbar {
 	margin: 0 auto;
@@ -53,9 +69,6 @@ header {
 .nav-link:hover {
 	color: #000;
 }
-.navbar-toggler {
-
-}
 .header-title {
 	margin: 0 auto;
 	margin-top: 150px;
@@ -76,8 +89,10 @@ header {
 }
 .header-button {
 	margin: 0 auto;
-	margin-top: 64px;
-	
+	margin-top: 64px;	
+}
+.header-button:hover .wrap {
+	background: rgba(0, 0, 0, 0.5);
 }
 .primary-button {
 	display: block;
@@ -168,12 +183,7 @@ header {
 	font-weight: 700;
 }
 .whatWeDo-title {
-	margin: 0 auto;
-	width: 277px;
 	color: #000000;
-	font-family: "Proxima Nova";
-	font-size: 48px;
-	font-weight: 700;
 }
 .whatWeDo-cards {
 	margin: 0 300px;
@@ -213,7 +223,7 @@ header {
 	min-height: 900px;
 	padding-top: 110px;
 	margin: 0 auto;
-	background: url(img/about-bg.png) no-repeat top;
+	background: url(img/about-bg.png) no-repeat fixed top;
 }
 .aboutUs-title {
 	color: #fff;
@@ -279,6 +289,9 @@ header {
 	margin: 0 auto;
 	margin-top: 70px;
 }
+iframe {
+	width: 100%;
+}
 footer {
 	height: 700px;
 	background: #fff;
@@ -296,4 +309,56 @@ footer {
 }
 .footer-text strong {
 	font-weight: 700;
+}
+
+
+@media screen and (max-width: 1350px) {
+		.best-col {
+		padding-top: 90px;
+	}
+	.best-design {
+		padding-left: 100px;
+	}
+	.best-code {
+		padding-right: 100px;
+	}
+	.whatWeDo-cards {
+		margin: 0 100px;
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 80px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	header {
+		background-attachment: scroll;
+	}
+	.aboutUs {
+		background-attachment: scroll;
+	}
+	.aboutUs-cards {
+		width: 100%;
+	}
+	.aboutUs-card {
+		width: 25%;
+	}
+	.aboutUs-card-subtitle {
+		width: 180px;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+	.best {
+		flex-direction: column;
+	}
+	.whatWeDo-cards {
+		margin: 0 100px;
+		margin-top: 113px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 80px;
+	}
 }
